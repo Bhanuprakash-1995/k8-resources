@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-demo
+  labels:
+    name: demonstrating-environment-varibles
+spec:
+  containers:
+    - name: env-demo-container
+      image: nginx
+      env:
+        - name: DEMO GREETING
+          value: "Hello from the environment"
+        - name: DEMO_FAREWELL
+          value: "Such a sweet memories"
