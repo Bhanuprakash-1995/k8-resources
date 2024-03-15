@@ -4,7 +4,7 @@ metadata:
   name: label-demo
   labels:
     COURSE: "Devops"
-    Trainer: "Sivakumar Reddy"
+    Trainer: "SivakumarReddy"
 spec:
   containers:
     - name: hello-pod
