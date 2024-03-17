@@ -1,16 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: annotation
+  name: envar-demo
   labels:
-    COURSE: "Devops"
-    Trainer: "SivakumarReddy"
-  annotations:
-    com.roboshop.traninind.duration: "120 hours"
-    jenkins.url: "https://jenkins.com/roboshop/catalogue#45"
+    purpose: demonstrate-envars
 spec:
   containers:
-    - name: hello-pod
+    - name: envar-demo-container
       image: nginx
-      ports:
-        - containerPort: 80
+      env:
+        - name: DEMO_GREETING
+          value: "Hello from the environment"
+        - name: DEMO_FAREWELL
+          value: "Such a sweet sorrow"
