@@ -7,7 +7,7 @@ spec:
     - name: env-demo-container
       image: nginx
       env:
-        - name: DEMOGREETING
+        - name: "DEMO_GREETING"
           value: "Hello from the environment"
-        - name: DEMOFAREWELL
+        - name: "DEMO_FAREWELL"
           value: "Such a sweet sorrow"
