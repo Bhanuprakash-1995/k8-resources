@@ -4,7 +4,7 @@ metadata:
   name: annotation
   labels:
     COURSE: "Devops"
-    Trainer: "Sivakumar Reddy"
+    Trainer: "SivakumarReddy"
   annotations:
     com.roboshop.traninind.duration: "120 hours"
     jenkins.url: "https://jenkins.com/roboshop/catalogue#45"
