@@ -14,7 +14,7 @@ spec:
         requests:
           cpu: "100m" # 0.1 CPU
           memory: "68Mi" # 64 mb of RAM
-        # hard limit for the container to serve the maximium requests
+        # hard limit for the container to serve the maximium requests traffic
         limits:
           cpu: "200m" # 0.2 CPU
           memory: "128Mi" # 128 mb of RAM
