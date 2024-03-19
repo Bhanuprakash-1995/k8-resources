@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+spec:
+  containers:
+    - name: hello-pod
+      image: nginx
+      #here with this line port will not be opened, just for information
+      ports:
+        - containerPort: 80
+      resources:
+        # soft limit at the time of container start
+        requests:
+          cpu: "100m" # 0.1 CPU
+          memory: "68Mi" # 64 mb of RAM
+        # hard limit for the container to serve the maximium requests
+        limits:
+          cpu: "200m" # 0.2 CPU
+          memory: "128Mi" # 128 mb of RAM
