@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     app: nginx # Pod Labels
-    type: ClusterIP
   ports:
     - name: name-of-the-port
       port: 8081 # service listens on 8081 port

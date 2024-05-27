@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   annotations:
-    kubernetes.io/change-cause: "Updating to apline version"
+    kubernetes.io/change-cause: "Updating to latest version"
 spec:
   replicas: 3
   selector:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx:apline
+          image: nginx:latest
           ports:
             - containerPort: 80
