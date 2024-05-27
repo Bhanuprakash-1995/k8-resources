@@ -1,7 +1,3 @@
-# Service is a abstractino for the set of pods, if we want to communicate with pods
-# we have to communicate with associated service because pods ip are efimeral in nature
-# Using label service will identify the pods to which the request needs to be tranffered
-
 apiVersion: v1
 Kind: Service
 metadata:
@@ -14,4 +10,8 @@ spec:
     - name: name-of-the-port
       port: 8081 # service listens on 8081 port
       targetPort: 80 # sevice forwards the request to target 80 (nginx)
+
+# Service is a abstractino for the set of pods, if we want to communicate with pods
+# we have to communicate with associated service because pods ip are efimeral in nature
+# Using label service will identify the pods to which the request needs to be tranffered
 
