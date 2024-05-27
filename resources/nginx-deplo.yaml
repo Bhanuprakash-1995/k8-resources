@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  annotations:
+    kubernetes.io/change-cause: "Updating to apline version"
 spec:
   replicas: 3
   selector:
@@ -15,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx:1.21.3
+          image: nginx:apline
           ports:
             - containerPort: 80
