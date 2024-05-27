@@ -8,7 +8,7 @@ metadata:
   name: nginx-service
 spec:
   selector:
-    app: nginx
+    app: nginx # Pod Labels
     type: ClusterIP
   ports:
     - name: name-of-the-port
